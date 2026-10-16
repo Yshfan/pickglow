@@ -27,16 +27,17 @@
     <li>添加摄影风格相关数据，或按你的调整生成新版本；</li>
     <li>根据你的选择，存为新照片，或通过系统的可复原编辑更新原照片。</li>
   </ul>
-  <p>为了重试、导出和校验，本 App 会在自己的沙盒中保存所选照片的副本和处理结果。你可以在「设置 &gt; 存储空间」中清除；删除本 App 也会一并删除这些文件。这些文件不会离开你的设备。</p>
+  <p>为了重试、导出和校验，本 App 会在自己的沙盒中保存所选照片的副本和处理结果。你可以在「设置 &gt; 存储空间」清除已保存或已导出的处理文件；删除本 App 也会删除沙盒文件。本 App 不主动上传这些文件。你启用的系统备份、iCloud 照片同步或主动导出，仍由 Apple 服务或你选择的目的地按相应设置处理。</p>
 
   <h2>人脸与人物数据</h2>
-  <p>「柔肤」等功能使用 Apple 的 Vision 框架，在本机检测当前照片中的人脸与五官位置，仅用于这一次处理。检测结果不会被上传、汇总或用于识别身份。</p>
+  <p>「柔肤」等功能使用 Apple 的 Vision 框架，在本机检测当前照片中的人脸、五官与皮肤区域，用于当前照片或视频帧的处理。部分风格辅助区域可能随结果文件保存在本机；不从其他照片复制人物遮罩，不用于识别身份，也不上传至开发者或第三方服务器。</p>
 
   <h2>购买</h2>
   <p>终身会员通过 Apple 的 App 内购买完成。付款和交易记录由 Apple 处理，本 App 无法获取你的付款信息。为计算免费额度，本 App 在设备的钥匙串中保存「已处理张数」这一个数字，不与任何身份信息关联，也不会上传。</p>
+  <p>会员卡的轻微倾斜效果使用设备姿态数据，仅用于当前屏幕的视觉反馈，不保存、不上传。开启「减弱动态效果」或离开会员页后停止读取。</p>
 
   <h2>网络</h2>
-  <p>本 App 只在以下情况联网：从 iCloud 照片下载你所选照片的原件（由系统完成），以及与 App Store 通信以完成购买或恢复购买。</p>
+  <p>本 App 可能通过系统从 iCloud 照片下载原件，以及与 App Store 通信获取价格、验证或恢复购买。打开使用帮助、隐私政策或上游源码链接时，会由浏览器访问对应网页；GitHub Pages 托管的网站访问按 GitHub 自身政策处理。本 App 不接入第三方统计 SDK。</p>
 
   <h2>儿童隐私</h2>
   <p>本 App 不面向特定年龄群体收集信息，也不收集儿童的个人信息。</p>
@@ -52,13 +53,14 @@
     <p>Pickglow Styles (“the app”) <strong>does not collect, upload or sell</strong> any personal data. All photo processing happens on your device. There are no accounts, no ads, no third-party analytics and no app servers.</p>
   </section>
   <h2>Photos</h2>
-  <p>When you choose photos, the app reads their original files and, on device, checks compatibility, adds Photographic Style data or applies your adjustments, then saves a new photo or updates the original through the system’s revertible editing, as you choose. Working copies and results are kept inside the app’s sandbox for retrying, exporting and verification. You can clear them in Settings &gt; Storage, and they are removed with the app. They never leave your device.</p>
+  <p>When you choose photos, the app reads their original files and, on device, checks compatibility, adds style data or applies your adjustments, then saves a new photo or updates a supported original using revertible editing. Working copies and results stay in the app sandbox for retries, export and verification. Settings &gt; Storage clears files already saved or exported; uninstalling removes sandbox files. The app does not upload them. System backups, iCloud Photos sync and exports you initiate remain subject to your system and destination settings.</p>
   <h2>Faces</h2>
-  <p>Features such as Soft Skin use Apple’s Vision framework on device to locate faces and facial features in the current photo, only for that edit. Nothing is uploaded, aggregated or used for identification.</p>
+  <p>Features such as Soft Skin use Apple’s Vision framework on device to locate faces, facial features and skin regions in the current photo or video frame. Some style regions may be stored in local output files. Masks are not copied from other photos, used for identity recognition or uploaded to developer or third-party servers.</p>
   <h2>Purchases</h2>
   <p>The lifetime unlock is an Apple In-App Purchase. Payment is handled by Apple; the app never sees your payment details. To track the free allowance, the app stores a single number — how many photos were processed — in the device keychain. It is not linked to you and is never uploaded.</p>
+  <p>The membership card uses device attitude only for a temporary tilt effect. Motion values are not saved or uploaded; updates stop off screen or when Reduce Motion is enabled.</p>
   <h2>Network</h2>
-  <p>The app goes online only to download originals of photos you choose from iCloud Photos (handled by the system) and to talk to the App Store for purchases and restores.</p>
+  <p>The system may download originals from iCloud Photos and communicate with the App Store for prices, verification, purchases and restores. Opening help, privacy or source links visits the relevant website in a browser. GitHub Pages hosting follows GitHub’s own policies. No third-party analytics SDK is included.</p>
   <h2>Contact</h2>
   <p>Questions: <a href="https://github.com/Yshfan/pickglow/issues">GitHub Issues</a>. Changes to this policy will be posted on this page.</p>
 

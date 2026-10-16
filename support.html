@@ -32,11 +32,12 @@
   <details><summary>保存时提示 3302 或「资源无效」？</summary>
     <p>这是系统拒绝了写回原照片。请改用「存为新照片」，原照片保持不变。</p></details>
   <details><summary>免费额度和会员是怎样的？</summary>
-    <p>可免费添加 10 张。一次购买「终身会员」即可不限张数，无订阅。更换设备或重装后，在「设置 &gt; 会员」中轻点「恢复购买」。</p></details>
+    <p>可免费成功生成并校验 10 张风格照片，导入失败不计数，同一结果保存失败后的重试不重复计数。额度只在本机记录，不跨设备同步。一次购买「终身会员」即可不限张数，无订阅。更换设备或重装后，在「设置 &gt; 会员」中轻点「恢复购买」。购买按钮显示当前 App Store 地区的实际价格；其他地区采用 Apple 以人民币 18 元为基准自动生成的价格档位，并非实时汇率报价。</p></details>
   <details><summary>「App 内处理文件」是什么？可以清除吗？</summary>
     <p>导入时 App 会复制一份原件并保存处理结果，用于重试、导出和检查。它们只在本 App 内，不是「照片」里的照片。在「设置 &gt; 存储空间」可清除已保存或已导出的部分。</p></details>
   <details><summary>实况照片支持吗？</summary>
-    <p>支持（实验）。App 会同时处理照片和整段视频，并另存为新的实况照片，原实况保留。</p></details>
+    <p>完整实况摄影风格仍未完成。目前添加摄影风格仅另存新的静态封面，不保留动态部分，保存前会明确提示；原实况及其视频保留。带摄影风格的实况在 App 内编辑后也仅另存静态照片。普通实况的 App 内效果可处理整段视频，这与苹果原生摄影风格编辑是不同功能。</p></details>
+  <details><summary>RAW 格式都能处理吗？</summary><p>不能保证。DNG、RW2、ARW 等需要逐个检查系统是否能解码该格式及具体相机型号。不能解码时会显示失败；可从相机导出 JPG 再尝试。</p></details>
 
   <h2>联系我们</h2>
   <p>遇到问题或有建议，请在 <a href="https://github.com/Yshfan/pickglow/issues">GitHub Issues</a> 留言，附上 App 版本（设置 &gt; 关于）、iPhone 型号、系统版本和照片来源，方便定位。</p>
@@ -54,7 +55,9 @@
   <h2>FAQ</h2>
   <details><summary>Are my originals kept?</summary><p>Yes. Saving as new adds a photo; updating the original uses revertible editing (Edit &gt; Revert in Photos). Imported files are never modified.</p></details>
   <details><summary>Which photos work?</summary><p>Mainly HEIC photos from iPhone 15 and earlier, plus camera JPG / RAW (experimental). Native style editing depends on the photo, device and iOS version. Texture, Grain and Halation need iOS 27 or later.</p></details>
-  <details><summary>Free photos and the lifetime unlock</summary><p>10 photos are free. A one-time Lifetime purchase removes the limit — no subscription. Use Settings &gt; Membership &gt; Restore Purchases on a new device.</p></details>
+  <details><summary>Free photos and the lifetime unlock</summary><p>10 successfully generated and verified style outputs are free. Failed imports do not count; retrying a failed save of the same output is not charged twice. The local allowance does not sync across devices. A one-time Lifetime purchase removes the limit, with no subscription. Restore ownership in Settings &gt; Membership &gt; Restore Purchases. The purchase button shows the current App Store price for your region. Apple derives regional price points from the CNY 18 base; this is not a live exchange-rate quote.</p></details>
+  <details><summary>Live Photos</summary><p>Whole-Live-Photo native style support remains unfinished. Adding style data currently saves a new still cover only, with an explicit warning before saving. The original Live Photo and video are kept. In-app edits to styled Live Photos also save a still. Ordinary Live Photos support whole-video in-app effects, which are separate from native Photographic Styles.</p></details>
+  <details><summary>RAW support</summary><p>Each DNG, RW2, ARW or other RAW file is checked against the system decoder for its format and camera model. Universal support is not promised. Export a JPG from the camera if decoding fails.</p></details>
   <p>Contact: <a href="https://github.com/Yshfan/pickglow/issues">GitHub Issues</a>.</p>
 
   <footer>© 2026 Pickglow</footer>
